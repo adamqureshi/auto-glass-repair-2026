@@ -1051,3 +1051,35 @@ textarea:focus {
     grid-row: auto;
   }
 }
+
+.omega-quote-card {
+  overflow: hidden;
+}
+
+.omega-frame-wrap {
+  overflow: hidden;
+  margin-top: 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--white);
+}
+
+.omega-frame {
+  display: block;
+  width: 100%;
+  min-height: 800px;
+  border: 0;
+}
+
+.quote-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
+@media (max-width: 520px) {
+  .omega-frame {
+    min-height: 760px;
+  }
+}

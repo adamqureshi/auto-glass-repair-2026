@@ -15,7 +15,7 @@ export default function ContactPage() {
             <span className="eyebrow">Contact Us</span>
             <h1>Request an auto glass repair quote and let the shop follow up.</h1>
             <p>
-              Use the form to send the lead into the POS workflow once the Omega EDI API key is active. Add direct phone,
+              Use the instant quote tool to keep the customer inside the Omega workflow Impex already uses. Add direct phone,
               address, hours, and team contact details below when you have them.
             </p>
           </div>

@@ -2,12 +2,12 @@
 
 Mobile-first lead generation site for **Impex Auto Glass**. Built with Next.js App Router for Vercel.
 
+This version uses the existing Omega EDI instant quote iframe, so no POS API key is required for launch.
+
 ## What is included
 
 - Fast quote-first homepage with the main CTA: **Impex Auto Glass Repair — Get a Quote**
-- Lead form flow: service need + ZIP first, then name, email, and phone
-- Server-side lead route at `/api/leads`
-- ZIP decode route at `/api/zip`
+- Existing Omega EDI quote iframe embedded on homepage, service pages, location pages, and contact page
 - Main service pages
 - Main city location SEO pages for:
   - Greensboro, NC
@@ -18,7 +18,7 @@ Mobile-first lead generation site for **Impex Auto Glass**. Built with Next.js A
   - Raleigh, NC
 - Footer location links
 - Sitemap and robots metadata
-- Content placeholder sections for you to fill in later
+- Content placeholder sections for future copy, photos, reviews, insurance language, and local proof
 
 ## Local development
 
@@ -31,50 +31,30 @@ Open `http://localhost:3000`.
 
 ## Vercel deployment
 
-1. Create a GitHub repo named `auto-glass-repair`.
+1. Create or use the GitHub repo.
 2. Upload this project to the repo.
 3. Import the repo into Vercel.
-4. Add the environment variables from `.env.example`.
-5. Start with `LEAD_CAPTURE_MODE=demo` until the POS credentials are verified.
-6. Switch to `LEAD_CAPTURE_MODE=omega` when ready to send real leads to Omega EDI.
+4. Add `NEXT_PUBLIC_SITE_URL` from `.env.example`.
+5. Deploy.
 
-## Omega EDI lead setup
+## Quote form
 
-The current implementation creates an Omega invoice/job with:
+The quote CTA embeds the current Omega EDI quoter:
 
-- `job_status: "LE"`
-- `invoice_status: "NS"`
-- customer name, phone, email, city/state
-- service request, ZIP, vehicle info, page URL, and UTM details inside the description/content fields
-
-Required Omega invoice fields must be provided as Vercel environment variables:
-
-```bash
-OMEGA_API_KEY=
-OMEGA_SALESMAN_1_ID=
-OMEGA_LOCATION_ID=
-OMEGA_ACCOUNT_COMPANY_ID=
-OMEGA_PRICING_PROFILE_ID=
-LEAD_CAPTURE_MODE=omega
+```html
+<iframe width="560" height="800" src="https://app.omegaedi.com/quoter/?folder=impex" frameborder="0"></iframe>
 ```
 
-Optional:
-
-```bash
-OMEGA_CREATE_INTERACTION=true
-```
-
-That creates an Omega Interaction after the invoice is created.
+This keeps the customer quote flow inside the system Impex already uses.
 
 ## Editing pages
 
 - Global site settings: `src/data/site.ts`
 - Services: `src/data/services.ts`
 - Main location pages: `src/data/locations.ts`
-- Lead form: `src/components/LeadForm.tsx`
-- POS mapping: `src/lib/omega.ts`
+- Quote iframe component: `src/components/LeadForm.tsx`
 - Styles: `src/app/globals.css`
 
 ## Notes
 
-The project is intentionally simple: no CMS, no Tailwind dependency, no client-side POS secrets. The API key is only used in the server route.
+The project is intentionally simple: no CMS, no Tailwind dependency, no POS API credentials, and no server-side lead integration in this iframe version.

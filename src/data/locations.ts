@@ -59,7 +59,7 @@ export const mainLocations: LocationPage[] = [
     slug: 'raleigh-nc',
     headline: 'Auto Glass Repair in Raleigh, NC',
     intro:
-      'Raleigh auto glass repair estimate requests built around speed, ZIP intake, and direct POS lead routing.',
+      'Raleigh auto glass repair estimate requests built around speed, ZIP intake, and the existing Impex quote workflow.',
     nearby: ['Cary', 'Durham', 'Apex', 'Wake Forest']
   }
 ];

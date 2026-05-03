@@ -28,10 +28,10 @@ export default function HomePage() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <span className="eyebrow">{siteConfig.leadCta}</span>
-            <h1>Auto Glass Repair estimates built for speed.</h1>
+            <h1>Auto Glass Repair quotes built for speed.</h1>
             <p className="hero-lede">
-              Need a windshield, side glass, back glass, or ADAS calibration quote? Choose the service, enter your ZIP,
-              and send your request to Impex Auto Glass for follow-up.
+              Need windshield repair, replacement, side glass, back glass, or ADAS calibration? Start an instant quote
+              through the Impex Auto Glass quote tool the shop already uses.
             </p>
             <div className="hero-actions">
               <Link href="#quote" className="button button-yellow">
@@ -68,10 +68,10 @@ export default function HomePage() {
           </div>
           <div className="split-copy">
             <span className="eyebrow">Lead flow</span>
-            <h2>Make the quote path obvious.</h2>
+            <h2>Keep the quote path obvious.</h2>
             <p>
-              The page removes distractions and asks for the details the shop needs first: what glass service the
-              customer needs, where they are located, and how to reach them.
+              The page removes distractions and sends every customer to the same instant quote workflow Impex already
+              trusts for daily quote requests.
             </p>
             <div className="steps-list">
               {conversionPoints.map((point, index) => (

@@ -4,7 +4,7 @@ export const siteConfig = {
   repoName: 'auto-glass-repair',
   primaryKeyword: 'Auto Glass Repair',
   description:
-    'Request a fast auto glass repair estimate from Impex Auto Glass. Repair, replacement, side glass, back glass, and ADAS calibration support across priority NC and SC service areas.',
+    'Start an instant auto glass repair quote with Impex Auto Glass. Repair, replacement, side glass, back glass, and ADAS calibration support across priority NC and SC service areas.',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://auto-glass-repair.vercel.app',
   logo: '/logo-impex-auto-glass.jpg',
   heroImage: '/mobile-glass-shop.jpg',
@@ -26,7 +26,7 @@ export const navLinks = [
 ];
 
 export const conversionPoints = [
-  'Tell us the glass problem and ZIP first.',
-  'Add your contact details so the shop can follow up.',
-  'The lead is sent server-side into the POS workflow when API keys are active.'
+  'Open the instant Impex quote tool from any service or city page.',
+  'Enter vehicle, ZIP, glass service, and contact details in the current Omega workflow.',
+  'Impex receives the quote request in the system the team already uses every day.'
 ];
