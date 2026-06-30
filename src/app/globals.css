@@ -130,6 +130,18 @@ button {
   color: var(--navy-3);
 }
 
+.header-actions {
+  display: none;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-phone {
+  color: var(--navy);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
 .header-cta {
   display: none;
   border-radius: 999px;
@@ -865,6 +877,12 @@ textarea:focus {
   align-items: center;
 }
 
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .cta-band p {
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.76);
@@ -964,6 +982,7 @@ textarea:focus {
 
 @media (min-width: 900px) {
   .desktop-nav,
+  .header-actions,
   .header-cta {
     display: inline-flex;
   }
@@ -1067,7 +1086,7 @@ textarea:focus {
 .omega-frame {
   display: block;
   width: 100%;
-  min-height: 800px;
+  min-height: 860px;
   border: 0;
 }
 
@@ -1078,8 +1097,27 @@ textarea:focus {
   font-weight: 750;
 }
 
+.quote-note a,
+.footer-phone {
+  color: var(--navy);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-phone {
+  display: inline-flex;
+  margin-top: 10px;
+  color: var(--yellow);
+  text-decoration: none;
+}
+
 @media (max-width: 520px) {
   .omega-frame {
-    min-height: 760px;
+    min-height: 820px;
   }
+}
+
+.inline-link {
+  margin-top: 0;
 }

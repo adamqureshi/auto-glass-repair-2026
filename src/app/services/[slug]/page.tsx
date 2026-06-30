@@ -20,7 +20,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 
   return {
     title: `${service.name} Quote`,
-    description: `${service.summary} Request a quote from Impex Auto Glass.`,
+    description: `${service.summary} Start a quote with Impex Auto Glass.`,
     alternates: {
       canonical: `/services/${service.slug}`
     }
@@ -41,7 +41,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     serviceType: service.keyword,
     provider: {
       '@type': 'AutoRepair',
-      name: siteConfig.name
+      name: siteConfig.name,
+      telephone: siteConfig.phoneDisplay
     },
     url: `${siteConfig.siteUrl}/services/${service.slug}`
   };
@@ -68,31 +69,30 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <section className="section-pad">
         <div className="container copy-grid">
           <article className="copy-card large-copy">
-            <span className="eyebrow">Content slot</span>
-            <h2>Add detailed {service.name.toLowerCase()} content here.</h2>
+            <span className="eyebrow">Start Here</span>
+            <h2>Get the right help for your vehicle glass.</h2>
             <p>
-              This placeholder is ready for specific process copy, warranty language, insurance wording, FAQs, pricing
-              factors, and real photos. Keep the first two paragraphs focused on the customer problem and the quote
-              action.
+              Vehicle glass can look simple from the outside, but the right repair or replacement depends on the damage,
+              the vehicle, and the glass location. Use the quote form to share the details so Impex Auto Glass can help
+              confirm the next step.
             </p>
           </article>
           <article className="copy-card">
-            <h3>Fast quote details to collect</h3>
-            <p>Service needed, ZIP, contact details, vehicle year, make, model, and a short note about the damage.</p>
+            <h3>What to have ready</h3>
+            <p>Your ZIP code, vehicle year, make, model, damaged glass location, name, phone, and email.</p>
           </article>
           <article className="copy-card">
-            <h3>SEO focus</h3>
-            <p>
-              Use this page to support the core keyword and link to local pages where customers search by city and state.
-            </p>
+            <h3>Need help now?</h3>
+            <p>Start your quote online or call Impex Auto Glass if you are unsure which service to choose.</p>
           </article>
         </div>
       </section>
 
       <section className="section-pad soft-bg">
         <div className="container section-heading">
-          <span className="eyebrow">Location pages</span>
-          <h2>{service.name} near the main service areas.</h2>
+          <span className="eyebrow">Service Areas</span>
+          <h2>{service.name} near you.</h2>
+          <p>Choose your nearest service area and start a quote.</p>
         </div>
         <div className="container">
           <LocationLinkGrid />

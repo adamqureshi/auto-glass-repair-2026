@@ -14,11 +14,11 @@ export const services: Service[] = [
     shortName: 'Repair',
     keyword: 'Auto Glass Repair',
     summary:
-      'For chips, cracks, and damaged vehicle glass where a repair may be the fastest option.',
+      'For chips, cracks, and damaged vehicle glass that may be repairable before the damage spreads.',
     details: [
-      'Capture the damage type and ZIP quickly.',
-      'Route the lead to the shop for estimate follow-up.',
-      'Use this page as the primary SEO target for the head keyword.'
+      'Tell us where the glass is damaged.',
+      'Share your vehicle details and ZIP code.',
+      'Impex Auto Glass will confirm the best repair option.'
     ]
   },
   {
@@ -27,11 +27,11 @@ export const services: Service[] = [
     shortName: 'Replacement',
     keyword: 'Auto Glass Replacement',
     summary:
-      'For windshields or other auto glass that need replacement instead of repair.',
+      'For windshields and other vehicle glass that need to be replaced for safety, visibility, or security.',
     details: [
-      'Helpful when damage is severe or in a critical driver-view area.',
-      'Add OEM/aftermarket, insurance, and warranty content when available.',
-      'Works with the same fast quote form.'
+      'Start a quote for damaged or broken auto glass.',
+      'Include the vehicle year, make, model, and ZIP code.',
+      'The Impex team will help confirm the right replacement.'
     ]
   },
   {
@@ -40,11 +40,11 @@ export const services: Service[] = [
     shortName: 'Side Glass',
     keyword: 'Side Glass Replacement',
     summary:
-      'For broken door glass, quarter glass, and side windows that need replacement.',
+      'For broken door glass, quarter glass, and side windows after break-ins, accidents, or storm damage.',
     details: [
-      'Useful for vandalism, break-ins, and accident damage leads.',
-      'Add cleanup and mobile service copy later if offered.',
-      'Collects vehicle details so the shop can identify the right glass.'
+      'Choose driver side or passenger side in the quote form.',
+      'Share your vehicle information so the correct glass can be checked.',
+      'Get help restoring security and keeping the weather out.'
     ]
   },
   {
@@ -53,11 +53,11 @@ export const services: Service[] = [
     shortName: 'Back Glass',
     keyword: 'Back Auto Glass Replacement',
     summary:
-      'For rear window and back glass replacement quote requests.',
+      'For rear window and back glass replacement on cars, trucks, SUVs, and vans.',
     details: [
-      'Designed for customers who need rear glass help fast.',
-      'Add defroster, antenna, and hatchback/SUV details as content later.',
-      'Pairs with ZIP decode to confirm service area.'
+      'Request help for shattered or cracked rear glass.',
+      'Include your ZIP code and vehicle details.',
+      'Impex can help with the right replacement glass and next steps.'
     ]
   },
   {
@@ -66,11 +66,11 @@ export const services: Service[] = [
     shortName: 'Forward Camera Calibration',
     keyword: 'ADAS Forward-Facing Camera Calibration',
     summary:
-      'For vehicles that need camera calibration after windshield replacement or glass service.',
+      'For vehicles with forward-facing cameras that may need calibration after windshield replacement.',
     details: [
-      'Targets vehicles with forward-facing cameras and safety systems.',
-      'Add make/model requirements and calibration process details later.',
-      'Lets the customer identify calibration needs during quote intake.'
+      'Tell us if your vehicle has lane assist, collision warning, or camera-based safety features.',
+      'Start a quote so calibration needs can be reviewed with the glass service.',
+      'Impex will help confirm the right calibration path for your vehicle.'
     ]
   },
   {
@@ -79,11 +79,11 @@ export const services: Service[] = [
     shortName: 'ADAS Calibration',
     keyword: 'ADAS Calibration',
     summary:
-      'For driver-assistance system calibration quote requests tied to auto glass work.',
+      'For advanced driver-assistance system calibration connected to windshield and auto glass work.',
     details: [
-      'Useful for lane assist, adaptive cruise, and other camera-based systems.',
-      'Add dynamic/static calibration details once confirmed.',
-      'Supports conversion from replacement pages where calibration may be required.'
+      'Request calibration support after windshield replacement.',
+      'Share your vehicle information and safety-system details.',
+      'Impex will help confirm whether calibration is needed.'
     ]
   }
 ];

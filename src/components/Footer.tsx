@@ -11,11 +11,16 @@ export function Footer() {
         <div className="footer-brand">
           <Image src={siteConfig.logo} alt="Impex Auto Glass" width={220} height={68} className="footer-logo" />
           <p>
-            Lead generation site for Impex Auto Glass repair, replacement, and ADAS calibration quote requests.
+            Auto glass repair, replacement, side glass, back glass, and ADAS calibration quotes from Impex Auto Glass.
           </p>
           <Link href="/#quote" className="footer-cta">
             {siteConfig.leadCta} — {siteConfig.ctaLabel}
           </Link>
+          {siteConfig.phoneHref ? (
+            <a href={siteConfig.phoneHref} className="footer-phone">
+              Call {siteConfig.phoneDisplay}
+            </a>
+          ) : null}
         </div>
 
         <div>
@@ -30,7 +35,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2>Main locations</h2>
+          <h2>Locations</h2>
           <ul className="footer-list">
             {mainLocations.map((location) => (
               <li key={location.slug}>
@@ -55,14 +60,14 @@ export function Footer() {
               <Link href="/contact">Contact Us</Link>
             </li>
             <li>
-              <Link href="/locations">All Location Targets</Link>
+              <Link href="/locations">Service Areas</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="container footer-bottom">
         <span>© {new Date().getFullYear()} Impex Auto Glass.</span>
-        <span>Built for fast auto glass repair quote conversion.</span>
+        <span>Auto glass quotes made simple.</span>
       </div>
     </footer>
   );

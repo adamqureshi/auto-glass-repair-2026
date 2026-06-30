@@ -14,7 +14,7 @@ export const mainLocations: LocationPage[] = [
     slug: 'greensboro-nc',
     headline: 'Auto Glass Repair in Greensboro, NC',
     intro:
-      'Fast quote intake for Greensboro drivers who need windshield repair, auto glass replacement, side glass, back glass, or ADAS calibration.',
+      'Get a fast auto glass repair quote in Greensboro for windshield repair, replacement, side glass, back glass, or ADAS calibration.',
     nearby: ['High Point', 'Burlington', 'Kernersville', 'Summerfield']
   },
   {
@@ -23,7 +23,7 @@ export const mainLocations: LocationPage[] = [
     slug: 'asheville-nc',
     headline: 'Auto Glass Repair in Asheville, NC',
     intro:
-      'Request an auto glass repair estimate in Asheville and share your ZIP so the Impex team can follow up with the right next step.',
+      'Request an auto glass repair quote in Asheville and let Impex Auto Glass help with the right next step.',
     nearby: ['Hendersonville', 'Boone', 'Hickory']
   },
   {
@@ -32,7 +32,7 @@ export const mainLocations: LocationPage[] = [
     slug: 'summerfield-nc',
     headline: 'Auto Glass Repair in Summerfield, NC',
     intro:
-      'A simple quote path for Summerfield drivers needing glass repair, replacement, or calibration help.',
+      'Start a simple quote request for auto glass repair, replacement, or calibration service in Summerfield.',
     nearby: ['Greensboro', 'Kernersville', 'High Point']
   },
   {
@@ -41,7 +41,7 @@ export const mainLocations: LocationPage[] = [
     slug: 'hendersonville-nc',
     headline: 'Auto Glass Repair in Hendersonville, NC',
     intro:
-      'Lead-focused auto glass repair estimate requests for Hendersonville, including replacement and ADAS calibration needs.',
+      'Get help with auto glass repair, replacement, back glass, side glass, and calibration quotes in Hendersonville.',
     nearby: ['Asheville', 'Boone', 'Hickory']
   },
   {
@@ -50,7 +50,7 @@ export const mainLocations: LocationPage[] = [
     slug: 'charlotte-nc',
     headline: 'Auto Glass Repair in Charlotte, NC',
     intro:
-      'Charlotte drivers can request a fast quote for auto glass repair, windshield replacement, side glass, back glass, and calibration.',
+      'Charlotte drivers can start a fast quote for windshield repair, replacement, side glass, back glass, and calibration.',
     nearby: ['Concord', 'Gastonia', 'Huntersville', 'Matthews']
   },
   {
@@ -59,12 +59,12 @@ export const mainLocations: LocationPage[] = [
     slug: 'raleigh-nc',
     headline: 'Auto Glass Repair in Raleigh, NC',
     intro:
-      'Raleigh auto glass repair estimate requests built around speed, ZIP intake, and the existing Impex quote workflow.',
+      'Raleigh drivers can start an auto glass repair quote and share the vehicle details needed for the right estimate.',
     nearby: ['Cary', 'Durham', 'Apex', 'Wake Forest']
   }
 ];
 
-export const futureServiceAreas = [
+export const additionalServiceAreas = [
   'Charlotte, NC',
   'Raleigh, NC',
   'Greensboro, NC',

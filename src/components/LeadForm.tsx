@@ -9,30 +9,30 @@ export function LeadForm({ defaultService, locationHint }: LeadFormProps) {
   return (
     <section id="quote" className="lead-form omega-quote-card" aria-labelledby="quote-heading">
       <div className="form-header">
-        <span className="eyebrow">Impex Auto Glass Repair</span>
-        <h2 id="quote-heading">Get an Instant Quote</h2>
-        <p>
-          Use the same Impex Auto Glass quote tool customers already use today. The quote stays inside the current Omega
-          workflow, so the shop does not need a new API key for launch.
-        </p>
-        {defaultService ? <p className="form-location-hint">Service page: {defaultService}</p> : null}
-        {locationHint ? <p className="form-location-hint">Location page: {locationHint}</p> : null}
+        <span className="eyebrow">Get a Quote</span>
+        <h2 id="quote-heading">Start Your Auto Glass Quote</h2>
+        <p>Enter your vehicle, damaged glass, ZIP code, and contact details below.</p>
+        {defaultService ? <p className="form-location-hint">Service needed: {defaultService}</p> : null}
+        {locationHint ? <p className="form-location-hint">Area: {locationHint}</p> : null}
       </div>
 
       <div className="omega-frame-wrap">
         <iframe
-          title="Impex Auto Glass instant quote form"
+          title="Impex Auto Glass quote form"
           src={omegaQuoterUrl}
           className="omega-frame"
           width="100%"
-          height="800"
-          loading="lazy"
+          height="860"
           frameBorder="0"
         />
       </div>
 
       <p className="quote-note">
-        This quote form is powered by Impex Auto Glass&apos; existing Omega EDI quote system.
+        Having trouble seeing the form?{' '}
+        <a href={omegaQuoterUrl} target="_blank" rel="noreferrer">
+          Open the quote form
+        </a>
+        .
       </p>
     </section>
   );

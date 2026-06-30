@@ -45,6 +45,7 @@ const organizationSchema = {
   '@type': 'AutoRepair',
   name: siteConfig.name,
   url: siteConfig.siteUrl,
+  telephone: siteConfig.phoneDisplay,
   logo: `${siteConfig.siteUrl}${siteConfig.logo}`,
   areaServed: ['North Carolina', 'South Carolina'],
   makesOffer: [

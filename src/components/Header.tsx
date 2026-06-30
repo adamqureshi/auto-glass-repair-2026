@@ -28,9 +28,16 @@ export function Header() {
           ))}
         </nav>
 
-        <Link href="/#quote" className="header-cta">
-          {siteConfig.ctaLabel}
-        </Link>
+        <div className="header-actions">
+          {siteConfig.phoneHref ? (
+            <a href={siteConfig.phoneHref} className="header-phone">
+              {siteConfig.phoneDisplay}
+            </a>
+          ) : null}
+          <Link href="/#quote" className="header-cta">
+            {siteConfig.ctaLabel}
+          </Link>
+        </div>
 
         <details className="mobile-menu">
           <summary>Menu</summary>
@@ -40,6 +47,7 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
+            {siteConfig.phoneHref ? <a href={siteConfig.phoneHref}>Call {siteConfig.phoneDisplay}</a> : null}
             <Link href="/#quote" className="mobile-cta">
               {siteConfig.ctaLabel}
             </Link>

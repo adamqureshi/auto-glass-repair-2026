@@ -6,7 +6,7 @@ import { LeadForm } from '@/components/LeadForm';
 export const metadata: Metadata = {
   title: 'Auto Glass Repair Services',
   description:
-    'Impex Auto Glass quote request pages for auto glass repair, replacement, side glass, back glass, and ADAS calibration.'
+    'Impex Auto Glass services include auto glass repair, windshield replacement, side glass, back glass, and ADAS calibration.'
 };
 
 export default function ServicesPage() {
@@ -16,10 +16,9 @@ export default function ServicesPage() {
         <div className="container page-hero-grid">
           <div>
             <span className="eyebrow">Services</span>
-            <h1>Auto glass repair, replacement, and calibration quote requests.</h1>
+            <h1>Auto glass repair, replacement, and calibration.</h1>
             <p>
-              The service pages are built to keep customers moving toward the quote form while giving search engines a
-              clean structure for each service topic.
+              Choose the service that matches your vehicle glass damage and start a quote with Impex Auto Glass.
             </p>
           </div>
           <LeadForm />
@@ -28,9 +27,9 @@ export default function ServicesPage() {
 
       <section className="section-pad soft-bg">
         <div className="container section-heading">
-          <span className="eyebrow">Service menu</span>
-          <h2>Choose the service page to edit or expand.</h2>
-          <p>Add exact process, pricing factors, warranty details, and real photos when you have them.</p>
+          <span className="eyebrow">Service Menu</span>
+          <h2>What do you need help with?</h2>
+          <p>From small chips to full replacement and calibration, start with the service below.</p>
         </div>
         <div className="container">
           <ServiceGrid />

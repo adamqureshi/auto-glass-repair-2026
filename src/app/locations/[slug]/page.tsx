@@ -21,7 +21,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 
   return {
     title: `Auto Glass Repair in ${location.city}, ${location.state}`,
-    description: `Request an auto glass repair quote in ${location.city}, ${location.state}. Impex Auto Glass handles repair, replacement, side glass, back glass, and ADAS calibration quote requests.`,
+    description: `Start an auto glass repair quote in ${location.city}, ${location.state}. Impex Auto Glass helps with repair, replacement, side glass, back glass, and ADAS calibration.`,
     alternates: {
       canonical: `/locations/${location.slug}`
     }
@@ -42,7 +42,8 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
     serviceType: 'Auto Glass Repair',
     provider: {
       '@type': 'AutoRepair',
-      name: siteConfig.name
+      name: siteConfig.name,
+      telephone: siteConfig.phoneDisplay
     },
     areaServed: `${location.city}, ${location.state}`,
     url: `${siteConfig.siteUrl}/locations/${location.slug}`
@@ -54,13 +55,15 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
       <section className="page-hero section-pad compact-hero local-hero">
         <div className="container page-hero-grid">
           <div>
-            <span className="eyebrow">{location.city}, {location.state}</span>
+            <span className="eyebrow">
+              {location.city}, {location.state}
+            </span>
             <h1>{location.headline}</h1>
             <p>{location.intro}</p>
             <div className="local-proof-row">
-              <span>Fast ZIP intake</span>
-              <span>Repair + replacement</span>
-              <span>ADAS calibration</span>
+              <span>Windshield Repair</span>
+              <span>Glass Replacement</span>
+              <span>ADAS Calibration</span>
             </div>
           </div>
           <LeadForm locationHint={`${location.city}, ${location.state}`} />
@@ -70,21 +73,20 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
       <section className="section-pad">
         <div className="container copy-grid">
           <article className="copy-card large-copy">
-            <span className="eyebrow">Local SEO content slot</span>
-            <h2>Build out unique {location.city} auto glass repair content here.</h2>
+            <span className="eyebrow">Local Help</span>
+            <h2>Need auto glass repair in {location.city}?</h2>
             <p>
-              Add local photos, landmarks served, neighborhood notes, common vehicle glass issues, reviews from nearby
-              customers, and clear proof that Impex Auto Glass serves {location.city}. Keep the form and quote CTA close
-              to the top.
+              Start with your damaged glass location, vehicle details, and ZIP code. Impex Auto Glass can help with
+              repair, replacement, side glass, back glass, and calibration needs in the {location.city} area.
             </p>
           </article>
           <article className="copy-card">
             <h3>Nearby areas</h3>
-            <p>{location.nearby?.join(', ') || 'Add nearby city and neighborhood targets here.'}</p>
+            <p>{location.nearby?.join(', ') || 'Start a quote and enter your ZIP code to confirm your area.'}</p>
           </article>
           <article className="copy-card">
-            <h3>Customer next step</h3>
-            <p>Choose the repair need, enter the ZIP, then share name, email, and phone so the shop can follow up.</p>
+            <h3>What happens next?</h3>
+            <p>After you submit your quote request, Impex Auto Glass will help confirm the repair or replacement details.</p>
           </article>
         </div>
       </section>
@@ -92,7 +94,8 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
       <section className="section-pad soft-bg">
         <div className="container section-heading align-left">
           <span className="eyebrow">Services in {location.city}</span>
-          <h2>Quote requests this page can capture.</h2>
+          <h2>Choose the service that matches your damage.</h2>
+          <p>Each service page explains what to send so Impex can help with your quote.</p>
         </div>
         <div className="container card-grid services-grid">
           {services.map((service) => (
@@ -101,7 +104,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
               <h3>{service.name}</h3>
               <p>{service.summary}</p>
               <Link href={`/services/${service.slug}`} className="text-link">
-                Learn more
+                View service
               </Link>
             </article>
           ))}
@@ -110,19 +113,22 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
 
       <section className="section-pad">
         <div className="container local-faq">
-          <span className="eyebrow">FAQ content slots</span>
-          <h2>Questions to answer for {location.city} customers.</h2>
+          <span className="eyebrow">Questions</span>
+          <h2>Auto glass repair questions in {location.city}.</h2>
           <details>
-            <summary>Can Impex Auto Glass help with auto glass repair in {location.city}?</summary>
-            <p>Add the confirmed service area details and response expectations here.</p>
+            <summary>Can I start an auto glass quote online?</summary>
+            <p>Yes. Use the quote form to enter your vehicle, damaged glass, ZIP code, and contact details.</p>
           </details>
           <details>
-            <summary>What information should customers send for a quote?</summary>
-            <p>Service type, ZIP, name, phone, email, vehicle year, make, model, and damage notes.</p>
+            <summary>What information should I have ready?</summary>
+            <p>Have your vehicle year, make, model, damaged glass location, ZIP code, name, phone, and email ready.</p>
           </details>
           <details>
-            <summary>Does ADAS calibration matter after windshield replacement?</summary>
-            <p>Add your approved ADAS calibration explanation and safety language here.</p>
+            <summary>Does windshield replacement require ADAS calibration?</summary>
+            <p>
+              Some vehicles have cameras or safety systems connected to the windshield. Impex Auto Glass can help confirm
+              whether calibration needs to be reviewed for your vehicle.
+            </p>
           </details>
         </div>
       </section>

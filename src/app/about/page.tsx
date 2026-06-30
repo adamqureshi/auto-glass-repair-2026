@@ -6,7 +6,7 @@ import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'About Impex Auto Glass and the auto glass repair quote process.'
+  description: 'Learn about Impex Auto Glass and start an auto glass repair or replacement quote.'
 };
 
 export default function AboutPage() {
@@ -16,10 +16,10 @@ export default function AboutPage() {
         <div className="container split-grid">
           <div>
             <span className="eyebrow">About Us</span>
-            <h1>Impex Auto Glass helps customers move from damaged glass to a clear next step.</h1>
+            <h1>Auto glass help when your vehicle glass is damaged.</h1>
             <p>
-              This page is ready for your company story, team information, shop details, service standards, and proof
-              that helps customers trust the quote process.
+              Impex Auto Glass helps drivers move from chipped, cracked, or broken glass to a clear repair or replacement
+              next step.
             </p>
             <div className="hero-actions">
               <Link href="/#quote" className="button button-yellow">
@@ -46,20 +46,20 @@ export default function AboutPage() {
       <section className="section-pad soft-bg">
         <div className="container copy-grid">
           <article className="copy-card large-copy">
-            <span className="eyebrow">Content slot</span>
-            <h2>Add the Impex Auto Glass story here.</h2>
+            <span className="eyebrow">Impex Auto Glass</span>
+            <h2>Repair, replacement, and calibration support.</h2>
             <p>
-              Add founder background, years in business, certifications, service standards, safety practices, warranty
-              details, insurance support, and any differentiators that should appear across the site.
+              From windshield chips and cracks to full glass replacement and ADAS calibration needs, Impex Auto Glass
+              helps customers get the information needed for the right quote.
             </p>
           </article>
           <article className="copy-card">
-            <h3>Trust proof</h3>
-            <p>Use this block for reviews, badges, partner logos, photos, or before-and-after examples.</p>
+            <h3>What we help with</h3>
+            <p>Windshield repair, auto glass replacement, side glass, back glass, and ADAS calibration.</p>
           </article>
           <article className="copy-card">
-            <h3>Service promise</h3>
-            <p>Add response time, service-area expectations, and what happens after a lead is submitted.</p>
+            <h3>Start online</h3>
+            <p>Use the quote form to share your vehicle, ZIP code, damaged glass, and contact details.</p>
           </article>
         </div>
       </section>
