@@ -1,39 +1,50 @@
 # auto-glass-repair-2026
 
-Mobile-first quote site for **Impex Auto Glass**. Built with Next.js App Router for Vercel.
+Static Impex Auto Glass quote site for Vercel.
 
-This version keeps the existing Impex instant quote form embedded on the site.
+This version does **not** use Next.js, npm, package.json, or package-lock.json. It is plain HTML/CSS with the Omega quote iframe, so Vercel should not run `npm install`.
 
-## What is included
+## Important GitHub update step
 
-- Quote-first homepage
-- Embedded instant quote form
-- Service pages for repair, replacement, side glass, back glass, and ADAS calibration
-- Main location pages for Greensboro, Asheville, Summerfield, Hendersonville, Charlotte, and Raleigh
-- Footer service and location links
-- Sitemap and robots metadata
-- Customer-facing copy throughout the pages
+Before uploading this version, delete the old app files from the repo root:
 
-## Local development
+- `package.json`
+- `package-lock.json`
+- `.npmrc`
+- `next.config.mjs`
+- `next-env.d.ts`
+- `tsconfig.json`
+- `src/`
+- old `public/` folder
+
+Then upload the files from this ZIP:
+
+- `vercel.json`
+- `README.md`
+- `public/`
+
+## Vercel settings
+
+In Vercel Project Settings, set Framework Preset to **Other**.
+
+Clear any manual Install Command override. This repo already sets `installCommand` to an empty string in `vercel.json`, which tells Vercel to skip install.
+
+Build Command can be left as the repo setting:
 
 ```bash
-npm install
-npm run dev
+echo "Static site ready - no npm build required"
 ```
 
-Open `http://localhost:3000`.
+Output Directory:
 
-## Vercel deployment
+```bash
+public
+```
 
-1. Upload this project to GitHub.
-2. Import the repo into Vercel.
-3. Add `NEXT_PUBLIC_SITE_URL` if you want canonical URLs to use the final production domain.
-4. Deploy.
+## Quote form
 
-## Editing pages
+The quote form uses:
 
-- Global site settings: `src/data/site.ts`
-- Services: `src/data/services.ts`
-- Main location pages: `src/data/locations.ts`
-- Quote iframe component: `src/components/LeadForm.tsx`
-- Styles: `src/app/globals.css`
+```html
+<iframe src="https://app.omegaedi.com/quoter/?folder=impex"></iframe>
+```
