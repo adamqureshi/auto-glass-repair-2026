@@ -46,5 +46,5 @@ public
 The quote form uses:
 
 ```html
-<iframe src="https://app.omegaedi.com/quoter/?folder=impex"></iframe>
+<iframe src="https://app.omegaedi.com/app/web_quoter/?folder=impex&formGuid=F8VXP78GMVKAN85AXHBFGNAI4L0QI6Y5"></iframe>
 ```
